@@ -193,7 +193,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:rgba(45, 123, 240, 0.849),url("assets\space-4k-9.jpg") center center;
+    background:rgba(45, 123, 240, 0.849),url("/assets/space-4k-9.jpg") center center;
     background-size:cover;
     color:#fff;
     z-index:9;
