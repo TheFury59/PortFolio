@@ -193,7 +193,8 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background-image:url("./assets/space-4k-9.jpg");   
+    background:url("assets/AdobeStock_553997001.jpeg") center center;  
+    background-size:cover; 
     color:#fff;
     z-index:9;
     position:fixed;
