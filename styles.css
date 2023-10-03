@@ -1,26 +1,28 @@
 body {
     margin: 0;
     padding: 0;
+    background-image: url('..\image\galaxy.gif'); /* Remplacez 'galaxy.gif' par le chemin de votre GIF */
+    background-size: cover;
+    background-attachment: fixed;
     font-family: Arial, sans-serif;
     color: #fff;
-    background-image: url('..\Image et sources\galaxy-space.gif');
-    background-attachment: fixed;
+    overflow: hidden; /* Empêche la barre de défilement lorsque le contenu dépasse la fenêtre */
 }
 
 #menu {
     position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 0;
+    right: 0;
+    width: 300px; /* Largeur du menu */
+    height: 100%;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 20px;
-    border-radius: 5px;
     text-align: center;
 }
 
 #menu h1 {
     font-size: 24px;
-    margin: 0 0 10px 0;
+    margin: 0 0 20px 0;
 }
 
 #menu p {
@@ -40,4 +42,3 @@ body {
 #header p {
     font-size: 18px;
 }
-
