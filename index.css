@@ -203,7 +203,6 @@ body {
     overflow-y:auto;
     display:none;
 }
-
 .container div {
     font-size:25px;
     margin:20px 0px;
@@ -215,6 +214,33 @@ body {
 .container section {
     margin:8vh 0px;
 }
+
+.container1 {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background:url("./assets/AdobeStock_637917701.jpeg") center center;  
+    background-size:cover; 
+    color:#fff;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display:none;
+}
+.container1 div {
+    font-size:25px;
+    margin:20px 0px;
+    transition:0.4s ease-in-out;
+}
+.container1 div:hover {
+    cursor:pointer;
+}
+.container1 section {
+    margin:8vh 0px;
+}
+
+
 #used div{
     font-size:14px !important;
     display:inline-block;
