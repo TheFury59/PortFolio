@@ -190,11 +190,12 @@ body {
     color:rgb(243, 155, 23);
 }
 /*un container par Page*/
-.container {
+.containerProjet {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:url("./assets/AdobeStock_637917701.jpeg") center center;  
+    background:url("./assets/AdobeStock_597780715.jpeg") center center;
+    filter: blur(5px); 
     background-size:cover; 
     color:#fff;
     z-index:9;
@@ -203,23 +204,24 @@ body {
     overflow-y:auto;
     display:none;
 }
-.container div {
+.containerProjet div {
     font-size:25px;
     margin:20px 0px;
     transition:0.4s ease-in-out;
 }
-.container div:hover {
+.containerProjet div:hover {
     cursor:pointer;
 }
-.container section {
+.containerProjet section {
     margin:8vh 0px;
 }
 
-.container1 {
+.containerBTS {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:url("./assets/AdobeStock_597780715.jpeg") center center;  
+    background:url("./assets/AdobeStock_620084892.jpeg") center center;
+    filter: blur(5px);  
     background-size:cover; 
     color:#fff;
     z-index:9;
@@ -228,15 +230,67 @@ body {
     overflow-y:auto;
     display:none;
 }
-.container1 div {
+.containerBTS div {
     font-size:25px;
     margin:20px 0px;
     transition:0.4s ease-in-out;
 }
-.container1 div:hover {
+.containerBTS div:hover {
     cursor:pointer;
 }
-.container1 section {
+.containerBTS section {
+    margin:8vh 0px;
+}
+
+.containerMoi {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background:url("/.assets/AdobeStock_553997001.jpeg") center center;
+    filter: blur(5px); 
+    background-size:cover; 
+    color:#fff;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display:none;
+}
+.containerMoi div {
+    font-size:25px;
+    margin:20px 0px;
+    transition:0.4s ease-in-out;
+}
+.containerMoi div:hover {
+    cursor:pointer;
+}
+.containerMoi section {
+    margin:8vh 0px;
+}
+
+.containerContact {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background:url("./assets/AdobeStock_580290190.jpeg") center center;
+    filter: blur(5px);  
+    background-size:cover; 
+    color:#fff;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display:none;
+}
+.containerContact div {
+    font-size:25px;
+    margin:20px 0px;
+    transition:0.4s ease-in-out;
+}
+.containerContact div:hover {
+    cursor:pointer;
+}
+.containerContact section {
     margin:8vh 0px;
 }
 
@@ -255,11 +309,35 @@ body {
 #used div:hover {
     cursor:text;
 }
-.container h1 {
+.containerProjet h1 {
     font-size:60px;
     text-decoration:underline;
 }
-.container p {
+.containerProjet p {
+    font-size:21px;
+}
+
+.containerBTS h1 {
+    font-size:60px;
+    text-decoration:underline;
+}
+.containerBTS p {
+    font-size:21px;
+}
+
+.containerMoi h1 {
+    font-size:60px;
+    text-decoration:underline;
+}
+.containerMoi p {
+    font-size:21px;
+}
+
+.containerContact h1 {
+    font-size:60px;
+    text-decoration:underline;
+}
+.containerContact p {
     font-size:21px;
 }
 .btn_one {
