@@ -203,20 +203,6 @@ body {
     overflow-y:auto;
     display:none;
 }
-.container1 {
-    width:90vw;
-    height:90vh;
-    padding:5vh 5vw;
-    background:url("./assets/AdobeStock_637917701.jpeg") center center;  
-    background-size:cover; 
-    color:#fff;
-    z-index:9;
-    position:fixed;
-    max-height:100vh;
-    overflow-y:auto;
-    display:none;
-}
-
 
 .container div {
     font-size:25px;
