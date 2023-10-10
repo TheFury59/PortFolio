@@ -245,6 +245,7 @@ body {
     height:90vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_553997001.jpeg") center center;
+    background:url("./assets/AdobeStock_553997001.jpeg") center center; 
     background-size:cover; 
     color:#fff;
     z-index:9;
@@ -269,7 +270,7 @@ body {
     width:90vw;
     height:90vh;
     padding:5vh 5vw;
-    background:url("./assets/AdobeStock_580290190.jpeg") center center;;  
+    background:url("https://drive.google.com/file/d/1qf30y72CNBR1XV0MJiInYoTC_Mfqd0qP/view?usp=drive_link") center center;
     background-size:cover; 
     color:#fff;
     z-index:9;
