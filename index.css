@@ -190,6 +190,11 @@ body {
     color:rgb(243, 155, 23);
 }
 /*un container par Page*/
+
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* X-offset, Y-offset, blur radius, color */
+  }
+  
 .containerProjet {
     width:90vw;
     height:90vh;
