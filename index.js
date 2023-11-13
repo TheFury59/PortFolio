@@ -57,18 +57,18 @@ function closecontact(){
 
 //phase de test fonction RSS
 function showRSS(){
-    $("#RSS_container").css("display","inherit");
-    $("#RSS_container").addClass("slideInFromTopLeft");
+    $("#RSS_container").css("display", "inherit");
+    $("#RSS_container").addClass("slideInFromBottomLeft");
     setTimeout(function(){
-        $("#RSS_container").removeClass("slideInFromTopLeft");
+        $("#RSS_container").removeClass("slideInFromBottomLeft");
     }, 800);
 }
 
 function closeRSS(){
-    $("#RSS_container").addClass("slideOutToTopLeft");
+    $("#RSS_container").addClass("slideOutToBottomLeft");
     setTimeout(function(){
-        $("#RSS_container").removeClass("slideOutToTopLeft");
-        $("#RSS_container").css("display","none");
+        $("#RSS_container").removeClass("slideOutToBottomLeft");
+        $("#RSS_container").css("display", "none");
     }, 800);
 }
 

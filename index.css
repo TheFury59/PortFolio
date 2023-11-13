@@ -161,11 +161,11 @@ body {
     height: 10vw;
     text-align: center;
     font-size: 25px;
-    transform: rotate(135deg);
+    transform: rotate(-135deg);
     background: transparent;
     color: #fff;
     position: fixed;
-    top: 0;
+    top: -100;
     left: 0;
     display: flex;
     align-items: center;
@@ -176,9 +176,7 @@ body {
     transition: 0.4s ease-in-out;
     border-radius: 150px 100px 0px 0px;
 }
-#RSS .rss-text {
 
-}
 
 
 
@@ -564,34 +562,34 @@ body {
 }
 
 
-/*Animation Slide coin*/
-@keyframes slideInFromTopLeft {
+@keyframes slideInFromBottomLeft {
     0% {
-      transform: translate(-100%, -100%);
-      opacity: 0;
+        transform: translate(-100%, 100%);
+        opacity: 0;
     }
     100% {
-      transform: translate(0, 0);
-      opacity: 1;
+        transform: translate(0, 0);
+        opacity: 1;
     }
-  }
-  
-  @keyframes slideOutToTopLeft {
+}
+ 
+@keyframes slideOutToBottomLeft {
     0% {
-      transform: translate(0, 0);
-      opacity: 1;
+        transform: translate(0, 0);
+        opacity: 1;
     }
     100% {
-      transform: translate(-100%, -100%);
-      opacity: 0;
+        transform: translate(-100%, 100%);
+        opacity: 0;
     }
+}
+
+  
+  .slideInFromBottomLeft {
+    animation-name: slideInFromBottomLeft;
   }
   
-  .slideInFromTopLeft {
-    animation-name: slideInFromTopLeft;
-  }
-  
-  .slideOutToTopLeft {
-    animation-name: slideOutToTopLeft;
+  .slideOutToBottomLeftt {
+    animation-name: slideOutToBottomLeft;
   }
   
