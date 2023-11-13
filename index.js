@@ -57,19 +57,21 @@ function closecontact(){
 
 //phase de test fonction RSS
 function showRSS(){
-    $("#projects_container").css("display","inherit");
-    $("#projects_container").addClass("animated slideInDown");
+    $("#RSS_container").css("display","inherit");
+    $("#RSS_container").addClass("slideInFromTopLeft");
     setTimeout(function(){
-        $("#projects_container").removeClass("animated slideInDown");
-    },800);
+        $("#RSS_container").removeClass("slideInFromTopLeft");
+    }, 800);
 }
+
 function closeRSS(){
-    $("#projects_container").addClass("animated slideOutUp");
+    $("#RSS_container").addClass("slideOutToTopLeft");
     setTimeout(function(){
-        $("#projects_container").removeClass("animated slideOutUp");
-        $("#projects_container").css("display","none");
-    },800);
+        $("#RSS_container").removeClass("slideOutToTopLeft");
+        $("#RSS_container").css("display","none");
+    }, 800);
 }
+
 
 
 setTimeout(function(){
