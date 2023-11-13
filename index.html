@@ -197,28 +197,13 @@
             </p>
         </section>       
     </div>
-    <!-- ========== Flux RSS========== -->
+    <!-- ========== Flux RSS ========== -->
     <div id="RSS_container" class="containerRSS">
         <div onclick="closeRSS()"><i class="fas fa-angle-right" style="transform: rotate(135deg);"></i> <!-- ou -45deg -->
         </div>
         <h1>Veille Informatique</h1>
         <section>
-            <p class="text-shadow">
-                <div id="rss-feed"></div>
-
-                    <script>
-                        fetch('https://api.rss2json.com/v1/api.json?rss_url=VOTRE_URL_DE_FLUX_RSS')
-                            .then(response => response.json())
-                            .then(data => {
-                                let output = '<ul>';
-                                data.items.forEach(item => {
-                                    output += `<li><a href="${item.link}">${item.title}</a></li>`;
-                                });
-                                output += '</ul>';
-                                document.getElementById('rss-feed').innerHTML = output;
-                            });
-                    </script>
-                </p>
+            <!-- start feedwind code --> <script type="text/javascript" src="https://feed.mikle.com/js/fw-loader.js" preloader-text="Loading" data-fw-param="164373/"></script> <!-- end feedwind code -->        </section>
         </section>
     </div>
     <div id="footer">
