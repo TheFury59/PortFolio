@@ -176,7 +176,7 @@ body {
 }
 #RSS .rss-text {
     display: block;
-    transform: rotate(-135deg); /* Rotation inverse pour le texte */
+    transform: rotate(135deg); /* Rotation inverse pour le texte */
     /* Vous pouvez ajouter d'autres styles ici si nécessaire */
 }
 
