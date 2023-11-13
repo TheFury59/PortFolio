@@ -61,7 +61,7 @@ function showRSS(){
     $("#RSS_container").addClass("slideInFromBottomLeft");
     setTimeout(function(){
         $("#RSS_container").removeClass("slideInFromBottomLeft");
-    }, 800);
+    }, 800); // Assurez-vous que cette durée correspond à celle de votre animation CSS
 }
 
 function closeRSS(){
@@ -69,8 +69,9 @@ function closeRSS(){
     setTimeout(function(){
         $("#RSS_container").removeClass("slideOutToBottomLeft");
         $("#RSS_container").css("display", "none");
-    }, 800);
+    }, 800); // Assurez-vous que cette durée correspond à celle de votre animation CSS
 }
+
 
 
 

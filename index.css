@@ -583,11 +583,15 @@ body {
 }
 
   
-  .slideInFromBottomLeft {
+.slideInFromBottomLeft {
     animation-name: slideInFromBottomLeft;
-  }
-  
-  .slideOutToBottomLeftt {
+    animation-duration: 0.8s; /* Durée de l'animation */
+    animation-fill-mode: forwards; /* Gardez l'état final après l'animation */
+}
+
+.slideOutToBottomLeft {
     animation-name: slideOutToBottomLeft;
-  }
+    animation-duration: 0.8s; /* Durée de l'animation */
+    animation-fill-mode: forwards; /* Gardez l'état final après l'animation */
+}
   
