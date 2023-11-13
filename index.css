@@ -172,7 +172,12 @@ body {
     justify-content: center; /* Ajustez si nécessaire */
     z-index: 4;
     transition: 0.4s ease-in-out;
-    border-radius: 100px 100px 0px 0px;
+    border-radius: 150px 100px 0px 0px;
+}
+#RSS .rss-text {
+    display: block;
+    transform: rotate(-135deg); /* Rotation inverse pour le texte */
+    /* Vous pouvez ajouter d'autres styles ici si nécessaire */
 }
 
 
@@ -394,6 +399,15 @@ body {
 .containerContact p {
     font-size:21px;
 }
+
+.containerRSS h1 {
+    font-size:60px;
+    text-decoration:underline;
+}
+.containerRSS p {
+    font-size:21px;
+}
+
 .btn_one {
     font-size:18px;
     font-family: 'Josefin Sans', sans-serif;
