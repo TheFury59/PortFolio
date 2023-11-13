@@ -199,14 +199,26 @@
     </div>
     <!-- ========== Flux RSS========== -->
     <div id="RSS_container" class="containerRSS">
-        <div onclick="closeRSS()"><i class="fas fa-angle-right" ></i></div>
+        <div onclick="closeRSS()"><i class="fas fa-angle-right" style="transform: rotate(135deg);"></i> <!-- ou -45deg -->
+        </div>
         <h1>Veille Informatique</h1>
         <section>
             <p class="text-shadow">
-                Bonjour! Je m'appelle Teo Debay, je suis étudiant Web développeur basé en France. Avec une forte
-                passion pour le développement Web et doté d'un sens aigu des solutions créatives, je me spécialise dans la transformation des idées.
-                en solutions numériques entièrement fonctionnelles. Mon objectif est de fournir des résultats exceptionnels qui dépassent les attentes du client.
-            </p>
+                <div id="rss-feed"></div>
+
+                    <script>
+                        fetch('https://api.rss2json.com/v1/api.json?rss_url=VOTRE_URL_DE_FLUX_RSS')
+                            .then(response => response.json())
+                            .then(data => {
+                                let output = '<ul>';
+                                data.items.forEach(item => {
+                                    output += `<li><a href="${item.link}">${item.title}</a></li>`;
+                                });
+                                output += '</ul>';
+                                document.getElementById('rss-feed').innerHTML = output;
+                            });
+                    </script>
+                </p>
         </section>
     </div>
     <div id="footer">
