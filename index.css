@@ -168,6 +168,8 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     justify-content: center; /* Ajustez si nécessaire */
     z-index: 4;
@@ -175,9 +177,7 @@ body {
     border-radius: 150px 100px 0px 0px;
 }
 #RSS .rss-text {
-    display: block;
-    transform: rotate(-45deg); /* Rotation inverse pour le texte */
-    /* Vous pouvez ajouter d'autres styles ici si nécessaire */
+
 }
 
 
