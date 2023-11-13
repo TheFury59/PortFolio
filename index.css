@@ -154,6 +154,28 @@ body {
     transition:0.4s ease-in-out;
     border-radius:100px 100px 0px 0px;
 }
+
+/***** Phase de test ajout d'un bouton en corner pour le flux RSS *****/
+#RSS {
+    width:10vw;
+    height:10vw;
+    text-align:center;
+    font-size:25px;
+    transform:rotate(45deg);
+    background:transparent;
+    color:#fff;
+    position:fixed;
+    bottom:0;
+    left:45vw;
+    display:flex;
+    flex-direction: column;
+    justify-content:right;
+    z-index:4;
+    transition:0.4s ease-in-out;
+    border-radius:100px 100px 0px 0px;
+}
+
+
 #projects:hover {
     background:rgb(243, 155, 23);
     cursor:pointer;
@@ -167,6 +189,10 @@ body {
     cursor:pointer;
 }
 #contact:hover {
+    background:rgb(243, 155, 23);
+    cursor:pointer;
+}
+#RSS:hover {
     background:rgb(243, 155, 23);
     cursor:pointer;
 }
@@ -292,6 +318,32 @@ body {
     cursor:pointer;
 }
 .containerContact section {
+    margin:8vh 0px;
+}
+
+/* phase de test container FLUX RSS */
+.containerRSS {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background:url("./assets/AdobeStock_620084892.jpeg") center center;
+    background-size:cover; 
+    color:#fff;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display:none;
+}
+.containerRSS div {
+    font-size:25px;
+    margin:20px 0px;
+    transition:0.4s ease-in-out;
+}
+.containerRSS div:hover {
+    cursor:pointer;
+}
+.containerRSS section {
     margin:8vh 0px;
 }
 
@@ -461,6 +513,9 @@ body {
         display:none;
     }
     #work {
+        display:none;
+    }
+    #RSS {
         display:none;
     }
     #footer {

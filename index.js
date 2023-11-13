@@ -54,6 +54,24 @@ function closecontact(){
         $("#contact_container").css("display","none");
     },800);
 }
+
+//phase de test fonction RSS
+function showRSS(){
+    $("#projects_container").css("display","inherit");
+    $("#projects_container").addClass("animated slideInDown");
+    setTimeout(function(){
+        $("#projects_container").removeClass("animated slideInDown");
+    },800);
+}
+function closeRSS(){
+    $("#projects_container").addClass("animated slideOutUp");
+    setTimeout(function(){
+        $("#projects_container").removeClass("animated slideOutUp");
+        $("#projects_container").css("display","none");
+    },800);
+}
+
+
 setTimeout(function(){
     $("#loading").addClass("animated fadeOut");
     setTimeout(function(){
@@ -64,5 +82,6 @@ setTimeout(function(){
       $("#about").removeClass("animated fadeIn");
       $("#contact").removeClass("animated fadeIn");
       $("#work").removeClass("animated fadeIn");
+      $("#RSS").removeClass("animated fadeIn");
     },1000);
 },1500);
