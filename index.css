@@ -175,6 +175,25 @@ body {
     border-radius: 100px 100px 100px 100px;
 }
 
+#Certif {
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+    font-size: 25px;
+    transform: rotate(-45deg);
+    background: transparent;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ajustez si nécessaire */
+    z-index: 4;
+    transition: 0.4s ease-in-out;
+    border-radius: 100px 100px 100px 100px;
+}
+
 
 
 
@@ -195,6 +214,10 @@ body {
     cursor:pointer;
 }
 #RSS:hover {
+    background:rgb(243, 155, 23);
+    cursor:pointer;
+}
+#Certif:hover {
     background:rgb(243, 155, 23);
     cursor:pointer;
 }
@@ -220,7 +243,7 @@ body {
 /*un container par Page*/
 
 .text-shadow {
-    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5); /* X-offset, Y-offset, blur radius, color */
+    text-shadow: 2px 2px 4px rgb(255, 0, 0); /* X-offset, Y-offset, blur radius, color */
   }
 
 .containerProjet {
@@ -349,6 +372,31 @@ body {
     margin:8vh 0px;
 }
 
+.containerCertif {
+    width:90vw;
+    height:90vh;
+    padding:5vh 5vw;
+    background:url("./assets/AdobeStock_620084892.jpeg") center center;
+    background-size:cover; 
+    color:#fff;
+    z-index:9;
+    position:fixed;
+    max-height:100vh;
+    overflow-y:auto;
+    display:none;
+}
+.containerCertif div {
+    font-size:25px;
+    margin:20px 0px;
+    transition:0.4s ease-in-out;
+}
+.containerCertif div:hover {
+    cursor:pointer;
+}
+.containerCertif section {
+    margin:8vh 0px;
+}
+
 
 #used div{
     font-size:14px !important;
@@ -401,6 +449,13 @@ body {
     text-decoration:underline;
 }
 .containerRSS p {
+    font-size:21px;
+}
+.containerCertif h1 {
+    font-size:60px;
+    text-decoration:underline;
+}
+.containerCertif p {
     font-size:21px;
 }
 
@@ -529,6 +584,9 @@ body {
     #RSS {
         display:none;
     }
+    #Certif{
+        display:none;
+    }
     #footer {
         text-align:center;
     }
@@ -562,7 +620,7 @@ body {
 
 @keyframes slideInFromBottomLeft {
     0% {
-        transform: translate(-100%, 100%);
+        transform: translate(-100%, -100%);
         opacity: 0;
     }
     100% {
@@ -577,7 +635,7 @@ body {
         opacity: 1;
     }
     100% {
-        transform: translate(-100%, 100%);
+        transform: translate(-100%, -100%);
         opacity: 0;
     }
 }
@@ -591,6 +649,40 @@ body {
 
 .slideOutToBottomLeft {
     animation-name: slideOutToBottomLeft;
+    animation-duration: 0.8s; /* Durée de l'animation */
+    animation-fill-mode: forwards; /* Gardez l'état final après l'animation */
+}
+
+@keyframes slideInFromTopLeft {
+    0% {
+        transform: translate(-100%, 100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+ 
+@keyframes slideOutToTopLeft {
+    0% {
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-100%, 100%);
+        opacity: 0;
+    }
+}
+
+.slideInFromTopLeft {
+    animation-name: slideInFromTopLeft;
+    animation-duration: 0.8s; /* Durée de l'animation */
+    animation-fill-mode: forwards; /* Gardez l'état final après l'animation */
+}
+
+.slideOutToTopLeft {
+    animation-name: slideOutToTopLeft;
     animation-duration: 0.8s; /* Durée de l'animation */
     animation-fill-mode: forwards; /* Gardez l'état final après l'animation */
 }

@@ -72,6 +72,23 @@ function closeRSS(){
     }, 800); // Assurez-vous que cette durée correspond à celle de votre animation CSS
 }
 
+//phase de test fonction RSS
+function showCertif(){
+    $("#Certif_container").css("display", "inherit");
+    $("#Certif_container").addClass("slideInFromTopLeft");
+    setTimeout(function(){
+        $("#Certif_container").removeClass("slideInFromTopLeft");
+    }, 800); // Assurez-vous que cette durée correspond à celle de votre animation CSS
+}
+
+function closeCertif(){
+    $("#Certif_container").addClass("slideOutToTopLeft");
+    setTimeout(function(){
+        $("#Certif_container").removeClass("slideOutToTopLeft");
+        $("#Certif_container").css("display", "none");
+    }, 800); // Assurez-vous que cette durée correspond à celle de votre animation CSS
+}
+
 
 
 
