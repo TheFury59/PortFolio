@@ -247,8 +247,8 @@ body {
   }
 
 .containerProjet {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:100vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_597780715.jpeg") center center;
     background-size:cover; 
@@ -272,8 +272,8 @@ body {
 }
 
 .containerBTS {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:100vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_620084892.jpeg") center center;
     background-size:cover; 
@@ -297,8 +297,8 @@ body {
 }
 
 .containerMoi {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:100vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_553997001.jpeg") center center;
     background-size:cover;
@@ -322,8 +322,8 @@ body {
 }
 
 .containerContact {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:100vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_580290190.jpeg") center center;
     background-size:cover; 
@@ -348,8 +348,8 @@ body {
 
 /* phase de test container FLUX RSS */
 .containerRSS {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:100vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_620084892.jpeg") center center;
     background-size:cover; 
@@ -373,8 +373,8 @@ body {
 }
 
 .containerCertif {
-    width:90vw;
-    height:90vh;
+    width:100vw;
+    height:100vh;
     padding:5vh 5vw;
     background:url("./assets/AdobeStock_620084892.jpeg") center center;
     background-size:cover; 
@@ -533,7 +533,7 @@ body {
 }
 #footer {
     color:#fff;
-    width:92vw;
+    width:100vw;
     padding:5vh 4vw;
     text-align:right;
     position:fixed;
@@ -689,46 +689,22 @@ body {
 
 
 
+/* slider certif */
 
+#certificationCarousel .carousel-item {
+    height: 750px; /* Hauteur personnalisable */
+  }
+  
+  #certificationCarousel img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 750px; /* Assurez-vous que l'image couvre la hauteur */
+  }
 
-.card-deck .card {
-    margin-bottom: 20px; /* Espacement entre les cartes */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour un effet de profondeur */
-    border-radius: 5px; /* Bords arrondis */
-}
-
-.card-img-top {
-    width: 100%; /* Assure que l'image couvre toute la largeur de la carte */
-    height: auto; /* Hauteur automatique pour conserver les proportions */
-    border-top-left-radius: 5px; /* Arrondit les coins supérieurs de l'image */
-    border-top-right-radius: 5px;
-}
-
-.card-body {
-    padding: 15px; /* Espacement à l'intérieur de la carte */
-}
-
-.card-title {
-    margin-bottom: 15px; /* Espacement sous le titre */
-    font-weight: bold; /* Texte en gras */
-    color: #333; /* Couleur du titre */
-}
-
-.card-text {
-    color: #555; /* Couleur du texte */
-}
-
-.card-text small {
-    color: #777; /* Couleur pour le texte secondaire */
-}
-
-/* Style pour les boutons, si vous en avez */
-.card-body .btn {
-    background-color: #007bff; /* Couleur de fond */
-    border-color: #007bff; /* Couleur de la bordure */
-}
-
-.card-body .btn:hover {
-    background-color: #0056b3; /* Couleur de fond au survol */
-    border-color: #0056b3; /* Couleur de la bordure au survol */
-}
+  #certificationCarousel .carousel-item img {
+    width: 50%; /* largeur à 100% du conteneur */
+    height: 750px; /* hauteur fixe, ajustez selon le besoin */
+    object-fit: cover; /* assure que l'image couvre bien la zone sans être déformée */
+  }
+  
