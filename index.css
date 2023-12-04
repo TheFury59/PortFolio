@@ -376,7 +376,7 @@ body {
     width:100vw;
     height:100vh;
     padding:5vh 5vw;
-    background:url("./assets/AdobeStock_620084892.jpeg") center center;
+    background:url("./assets/Station_spatial.png") center center;
     background-size:cover; 
     color:#fff;
     z-index:9;
@@ -688,23 +688,3 @@ body {
 }
 
 
-
-/* slider certif */
-
-#certificationCarousel .carousel-item {
-    height: 750px; /* Hauteur personnalisable */
-  }
-  
-  #certificationCarousel img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-height: 750px; /* Assurez-vous que l'image couvre la hauteur */
-  }
-
-  #certificationCarousel .carousel-item img {
-    width: 50%; /* largeur à 100% du conteneur */
-    height: 750px; /* hauteur fixe, ajustez selon le besoin */
-    object-fit: cover; /* assure que l'image couvre bien la zone sans être déformée */
-  }
-  
